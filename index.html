@@ -79,6 +79,31 @@
             width: 100%;
             bottom: 0;
         }
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 0;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .download-button:hover {
+            background-color: #0056b3;
+        }
+        .project-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .project-flex .text {
+            flex: 1;
+        }
+        .project-flex img {
+            max-width: 40%;
+            margin-left: 20px;
+        }
     </style>
 </head>
 <body>
@@ -115,13 +140,16 @@
     <div class="container">
         <section class="project">
             <h2>Project 3: Command Line Fighting Game</h2>
-            <p>This is a simple command line game developed using Java. This was my final project for a Java class.</p>
-            <div class="screenshots">
-                <img src="images/p3_scr1.png" alt="Screenshot 1">
-                <img src="images/p3_scr2.png" alt="Screenshot 2">
-                <img src="images/p3_scr3.png" alt="Screenshot 3">
-            </div>
-            <p>To play, download the ZIP file below and run "Main.java"</p>
+                <div class="project-flex">
+                    <div class="text">
+                        <p>This is a simple command line game developed using Java. This was my final project for a Java class.</p>
+                        <p>To play, download the ZIP file below and run "Main.java"</p>
+                    </div>
+                    <img src="images/p3_scr1.png" alt="Screenshot 1">
+                </div>
+        </section>
+        <section class="download">
+            <h2>Download My Projects</h2>
             <a class="download-button" href="https://github.com/rykerwellnitz/rykerwellnitz.github.io/blob/main/projects/FightingGame_WELLNITZ.zip" download>Download ZIP File</a>
         </section>
     </div>
