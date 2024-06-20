@@ -10,13 +10,25 @@
             margin: 0;
             padding: 0;
             background-color: #ffffff;
+            background-image: url('images/tag.png');
         }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.2); /* Black overlay with 50% opacity */
+            z-index: -1; /* Places the overlay behind other content */
+        }
+
         title {
             color: #000000;
         }
          
          header {
-            background-image: url('budi_monkey.jpg');
             background-size: cover;
             background-position: center;
             color: #000000;
